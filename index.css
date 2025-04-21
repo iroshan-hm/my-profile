@@ -1,0 +1,158 @@
+:root {
+  --primary: #3498db;
+  --secondary: #2c3e50;
+  --light: #ecf0f1;
+  --dark: #2c3e50;
+  --accent: #e74c3c;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.c-site-header {
+  background: linear-gradient(135deg, var(--secondary), var(--primary));
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.c-site-footer {
+  background-color: var(--secondary);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+nav {
+  margin: 1.5rem 0;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--light);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  margin-top: -2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 1rem auto;
+  display: block;
+}
+
+.codefuture-pic {
+  width: 8%;
+  height: 8%;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.skill-category {
+  flex: 1;
+  min-width: 250px;
+  background: var(--light);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skill-category h3 {
+  color: var(--primary);
+  margin-top: 0;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.5rem;
+}
+
+.video-container {
+  background: #f1f1f1;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.project-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid var(--primary);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tech-badge {
+  display: inline-block;
+  background-color: var(--primary);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.future-goals {
+  background-color: #e9f5ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
